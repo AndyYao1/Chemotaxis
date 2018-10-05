@@ -8,6 +8,7 @@
  	 for (int i = 0; i < colony.length; i++) {
   	 	colony[i] = new Bacteria();
 	 }
+	 frameRate(100);
  }   
 
  void draw()   
@@ -34,7 +35,11 @@
  	void show()
  	{
  		fill(myColor);
- 		ellipse(myX, myY, 20,20);
+ 		ellipse(myX, myY, 100,100);
+ 		fill(0);
+ 		ellipse(myX-20, myY-20, 20,20);
+ 		ellipse(myX+20, myY-20, 20,20);
+ 		arc(myX+1, myY+1, 30, 20, 0, PI);
  	}	   
  	void move()
  	{	
