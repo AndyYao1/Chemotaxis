@@ -25,16 +25,18 @@
  class Bacteria    
  {     
  	//lots of java!
- 	int myX,myY,myColor;
+ 	int myX,myY,myColor1,myColor2,myColor3;
  	Bacteria()
  	{
  		myX= 500;
  		myY= 500;
- 		myColor = color(random(0,255),random(0,255), random(0,255));
+ 		myColor1 = (246);
+ 		myColor2 = (255);
+ 		myColor3 = (0);
  	}
  	void show()
  	{
- 		fill(myColor);
+ 		fill(myColor1,myColor2,myColor3);
  		ellipse(myX, myY, 100,100);
  		fill(0);
  		ellipse(myX-20, myY-20, 20,20);
@@ -44,14 +46,14 @@
  	void move()
  	{	
  		if (mouseX>myX) {
- 			myX= myX+(int)(Math.random()*10)-1;
+ 			myX= myX+(int)(Math.random()*40)-1;
  		} else {
- 			myX= myX+(int)(Math.random()*10)-10;
+ 			myX= myX+(int)(Math.random()*40)-40;
  		}
  		if (mouseY>myY) {
- 			myY= myY+(int)(Math.random()*10)-1;
+ 			myY= myY+(int)(Math.random()*40)-1;
  		} else {
- 			myY= myY+(int)(Math.random()*10)-10;
+ 			myY= myY+(int)(Math.random()*40)-40;
  		}
  	}
  }
